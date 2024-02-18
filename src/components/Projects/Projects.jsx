@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Header from "../Header/Header";
 import "./Projects.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
@@ -213,6 +213,9 @@ const Pcomp = ({ item }) => {
 };
 
 export default function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const refa = useRef();
   const { scrollYProgress } = useScroll({
     target: refa,
