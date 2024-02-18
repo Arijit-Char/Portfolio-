@@ -1,0 +1,83 @@
+#sm ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -.5rem;
+  padding-top: 10px;
+  padding: 20px;
+}
+#sm ul li {
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 59px;
+  width: 59px;
+  background: #171515;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+#sm ul li:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+
+  border-radius: 50%;
+  transform: scale(0.9);
+  z-index: -1;
+  transition: 0.5s;
+}
+#sm ul li:nth-child(1):before {
+  background: #0055ff;
+}
+#sm ul li:nth-child(2):before {
+  background: #ff0000;
+}
+#sm ul li:nth-child(3):before {
+  background: #ffffff;
+}
+
+#sm ul li:hover:before {
+  filter: blur(3px);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #ff6600;
+}
+#sm ul li:nth-child(1):hover:before {
+  box-shadow: 0 0 15px #0055ff;
+}
+#sm ul li:nth-child(2):hover:before {
+  box-shadow: 0 0 15px #f21d1d;
+}
+#sm ul li:nth-child(3):hover:before {
+  box-shadow: 0 0 15px #ffffff;
+}
+
+#sm ul li:nth-child(1):hover {
+  color: #0055ff;
+  box-shadow: 0 0 15px #0055ff;
+  text-shadow: 0 0 15px #0055ff;
+}
+#sm ul li:nth-child(2):hover {
+  color: #ff0000;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #fe0000;
+}
+#sm ul li:nth-child(3):hover {
+  color: #ffffff;
+  box-shadow: 0 0 15px #ffffff;
+  text-shadow: 0 0 15px #ffffff;
+}
+
+#sm {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}

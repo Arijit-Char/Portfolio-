@@ -1,0 +1,26 @@
+.menuBurger {
+  width: 3vmax;
+  padding-top: 1rem;
+  height: 2.5vmax !important;
+  position: absolute !important;
+  top: -0.01vmax !important;
+  left: 2vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0px;
+  overflow: hidden;
+  z-index: 1000;
+}
+@media only screen and (max-width: 845px) {
+  .menuBurger {
+    padding-top: 1.5rem !important;
+  }
+  ul {
+    display: hidden;
+  }
+  .logoReactNavbar {
+    width: 123% !important;
+}
+}

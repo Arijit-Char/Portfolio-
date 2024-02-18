@@ -1,0 +1,26 @@
+.univ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-top: 4rem;
+  
+    .univcus{
+        height: 80vh;
+        width: 50%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 845px){
+    .univ .univcus {
+        height: 80vh;
+        width: 92%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
