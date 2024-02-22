@@ -159,6 +159,26 @@ h3 {
   transition: color 0.25s 0.0833333333s;
 }
 
+.cursor {
+  width: 26px;
+  height: 26px;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.3s;
+  pointer-events: none;
+  z-index: 1200;
+}
+
+.cursorHover {
+  transform: scale(3);
+  border: none;
+  box-shadow: 0 0 10px red;
+}
+.cursorHoverMini {
+  transform: scale(0.5);
+  box-shadow: 0 0 20px red;
+}
 @media only screen and (max-width: 845px) {
   .container {
     flex-direction: column;
@@ -172,7 +192,7 @@ h3 {
   .container .textcont {
     width: 101vw;
     padding-top: 5rem;
-    height: 31vh;
+    height: 27vh;
     margin-top: 10rem;
   }
   .project_intro {
@@ -180,7 +200,13 @@ h3 {
 
     padding-top: 1.5rem;
   }
-  h5{
+  h5 {
     padding: 0rem;
+  }
+  .cursor {
+    display: none;
+  }
+  .textcont {
+    transform: translateY(-190.183px) translateZ(0px) !important;
   }
 }

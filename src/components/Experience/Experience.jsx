@@ -86,6 +86,7 @@ const Comp = ({ item }) => {
           className="imagecont"
           ref={ref}
           style={{ height: "65vh", width: "33vw" }}
+          data-cursorpointer={true}
         >
           <img src={item.img} alt="" />
         </div>
@@ -95,8 +96,8 @@ const Comp = ({ item }) => {
             id="project3"
           >
             <div class="project_intro mt-4">
-              <h3>{item.title}</h3>
-              <h4 style={{ fontSize: "0.8rem" }}>{item.semTitle}</h4>
+              <h3 data-cursorpointer={true}>{item.title}</h3>
+              <h4 data-cursorpointermini={true} style={{ fontSize: "0.8rem" }}>{item.semTitle}</h4>
             </div>
             <h5 class="text-center mx-2 my-3 project_desc">
               <h5 class="text-start">Achievements/Tasks</h5>
@@ -109,9 +110,9 @@ const Comp = ({ item }) => {
                 }}
               >
                 <ul>
-                  <li>{item.desc1}</li>
-                  <li>{item.desc2}</li>
-                  <li>{item.desc3}</li>
+                  <li data-cursorpointermini={true}>{item.desc1}</li>
+                  <li data-cursorpointermini={true}>{item.desc2}</li>
+                  <li data-cursorpointermini={true}>{item.desc3}</li>
                 </ul>
               </h6>
             </h5>
@@ -124,7 +125,7 @@ const Comp = ({ item }) => {
                 class="btn btn_effect ms-4 p-2 my-1 project_links"
                 style={{ float: "left", marginLeft: "2rem" }}
               >
-                <a href={item.Link}>
+                <a data-cursorpointer={true} href={item.Link}>
                   Certificate Link
                   <i class="fa-solid fa-arrow-right-long ms-1"></i>
                 </a>
@@ -155,8 +156,10 @@ export default function Experience() {
 
   return (
     <div className="experience" ref={ref}>
+            <div className="cursor"></div>
+
       <div className="header">
-        <Header />
+        <Header  />
       </div>
       <div className="heading">
         <h1 style={{ margin: "0px", padding: "0px" }}>Experience</h1>

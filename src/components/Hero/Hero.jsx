@@ -10,7 +10,7 @@ import X from "../../data/x.png";
 import Instagram from "../../data/instagram.jpg";
 import Gfg from "../../data/gfg.png";
 import Leetcode from "../../data/leetcode.webp";
-let top = window.innerWidth <= 845 ? -29 : 3.25;
+let top = window.innerWidth <= 845 ? -38 : 3.25;
 let left = window.innerWidth <= 845 ? 25.5 : 12;
 const textVariants = {
   initial: {
@@ -34,6 +34,8 @@ function Body() {
   };
   return (
     <div className="hero">
+      <div className="cursor"></div>
+
       <div className="video">
         <video
           src={video}
@@ -50,8 +52,10 @@ function Body() {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HI,I'M ARIJIT,</motion.h2>
-          <motion.h1 variants={textVariants}>
+          <motion.h2 variants={textVariants} data-cursorpointer={true}>
+            HI,I'M ARIJIT,
+          </motion.h2>
+          <motion.h1 variants={textVariants} data-cursorpointer={true}>
             Full Stack Web Developer
           </motion.h1>
           <motion.div className="btn" variants={textVariants}>
@@ -63,6 +67,7 @@ function Body() {
                 border: "1px solid hsla(255, 80%, 49%, 0.76)",
                 marginRight: "4.5rem",
               }}
+              data-cursorpointer={true}
             >
               Contact Me
             </motion.button>
@@ -125,6 +130,7 @@ function Body() {
               variants={textVariants}
               className="button button2"
               style={{ border: "1px solid hsla(255, 80%, 49%, 0.76)" }}
+              data-cursorpointer={true}
             >
               <Link to="https://drive.google.com/file/d/1AW6C3sRD_pH4rogsFlwUJRy-N7QTnfCY/view?usp=sharing">
                 Resume

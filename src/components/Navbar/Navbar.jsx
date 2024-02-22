@@ -29,11 +29,10 @@ export default function Navbar() {
       initial="initial"
       animate="animate"
     >
-    
-
       <Header />
       <div className="contant">
         <motion.img
+          data-cursorpointer={true}
           className="logoimg"
           style={{ width: "15vw", position: "absolute", left: "15vw" }}
           src={logo}
@@ -53,17 +52,29 @@ export default function Navbar() {
           <ul>
             <li>
               <a href="https://www.linkedin.com/in/arijit-char-241468217/">
-                <i class="fab fa-linkedin-in" style={{ fontSize: "2rem" }}></i>
+                <i
+                  data-cursorpointer={true}
+                  class="fab fa-linkedin-in"
+                  style={{ fontSize: "2rem" }}
+                ></i>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/a__ri__ji__t/">
-                <i class="fab fa-instagram" style={{ fontSize: "2rem" }}></i>
+                <i
+                  data-cursorpointer={true}
+                  class="fab fa-instagram"
+                  style={{ fontSize: "2rem" }}
+                ></i>
               </a>
             </li>
             <li>
               <a href="https://github.com/Arijit-Char">
-                <i class="fa-brands fa-github" style={{ fontSize: "2rem" }}></i>
+                <i
+                  data-cursorpointer={true}
+                  class="fa-brands fa-github"
+                  style={{ fontSize: "2rem" }}
+                ></i>
               </a>
             </li>
           </ul>

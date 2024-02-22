@@ -62,6 +62,26 @@
   }
 }
 
+.cursor {
+  width: 26px;
+  height: 26px;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.3s;
+  pointer-events: none;
+  z-index: 1200;
+}
+
+.cursorHover {
+  transform: scale(3);
+  border: none;
+  box-shadow: 0 0 10px red;
+}
+.cursorHoverMini {
+  transform: scale(0.5);
+  box-shadow: 0 0 20px red;
+}
 @media only screen and (max-width: 845px) {
   .hero .video .text {
     position: absolute;
@@ -78,9 +98,12 @@
     font-weight: 600;
   }
   .hero .video .text .btn {
-  
-    top: 20vh;
-   
-}
-
+    top: 29vh;
+  }
+  .cursor {
+    display: none;
+  }
+  .hero .video > video {
+    position: absolute;
+  }
 }

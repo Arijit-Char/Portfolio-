@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 $text: "montserrat", sans-serif;
 $heading: "Roboto", sans-serif;
@@ -10,12 +10,12 @@ $heading: "Roboto", sans-serif;
 html {
   height: 100%;
   scroll-snap-type: y mandatory;
- 
 }
 body {
   background-color: #030207;
   color: lightgray;
   height: 100%;
+  cursor: none;
 }
 section {
   height: 100vh;

@@ -50,6 +50,8 @@ export default function Contact() {
   const useinview = useInView(ref, { margin: "-100px" });
   return (
     <div>
+            <div className="cursor"></div>
+
       <div className="header">
         <Header />
       </div>
@@ -62,12 +64,12 @@ export default function Contact() {
       >
         <motion.div className="textcont" variants={variants}>
           <motion.div className="text" variants={variants}>
-            <motion.h1 variants={variants}>Reach Out !!</motion.h1>
-            <h3>
+            <motion.h1 variants={variants} data-cursorpointer={true}>Reach Out !!</motion.h1>
+            <h3 data-cursorpointermini={true}>
               Full time job opportunity,Internship opportunity, Freelance
               opportunity or even a coffee.
             </h3>
-            <h3>
+            <h3 data-cursorpointermini={true}>
               However, if you have any additional requests or questions, please
               do not hesitate to contact me.
             </h3>
@@ -91,18 +93,18 @@ export default function Contact() {
             <span>165/1,S Sinthee Rd,Sinthee,Kolkata,West Bengal 700050</span>
           </motion.div>
 
-          <div className="links">
-            <a href="https://www.linkedin.com/in/arijit-char-241468217/">
-              <FaLinkedin />
+          <div className="links" >
+            <a  href="https://www.linkedin.com/in/arijit-char-241468217/">
+              <FaLinkedin data-cursorpointermini={true}/>
             </a>
             <a href="https://github.com/Arijit-Char">
-              <FaGithub />
+              <FaGithub data-cursorpointermini={true}/>
             </a>
             <a href="https://twitter.com/char_arijit">
-              <FaTwitter />
+              <FaTwitter data-cursorpointermini={true} />
             </a>
             <a href="https://www.instagram.com/a__ri__ji__t/">
-              <FaInstagramSquare />
+              <FaInstagramSquare data-cursorpointermini={true}/>
             </a>
           </div>
         </motion.div>
@@ -134,15 +136,16 @@ export default function Contact() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 4, duration: 1 }}
           >
-            <input type="text" required placeholder="Name" name="name" />
-            <input type="email" required placeholder="Email" name="email" />
+            <input data-cursorpointermini={true} type="text" required placeholder="Name" name="name" />
+            <input data-cursorpointermini={true} type="email" required placeholder="Email" name="email" />
             <textarea
               required
               rows={8}
               placeholder="Mail Me"
               name="message"
+              data-cursorpointermini={true}
             ></textarea>
-            <button>Send Me Mail</button>
+            <button data-cursorpointer={true}>Send Me Mail</button>
           </motion.form>
         </div>
       </motion.div>

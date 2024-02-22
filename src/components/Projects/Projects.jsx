@@ -65,7 +65,7 @@ const items = [
     desc3:
       "Hand coded custom amination using css and Framer-Motion and making the website interactive.",
     sourceCode: "https://github.com/Arijit-Char/Portfolio-",
-    Link: "https://65d22121d7d42a67eeae735d--reliable-froyo-495299.netlify.app/",
+    Link: "https://github.com/Arijit-Char/Portfolio-",
   },
   {
     id: 3,
@@ -149,7 +149,7 @@ const Pcomp = ({ item }) => {
   return (
     <section>
       <div className="container">
-        <div className="imagecont" ref={refa}>
+        <div className="imagecont" ref={refa} data-cursorpointer={true}>
           <img src={item.img} alt="" />
         </div>
         <motion.div className="textcont" style={{ y }}>
@@ -158,8 +158,8 @@ const Pcomp = ({ item }) => {
             id="project3"
           >
             <div class="project_intro mt-4">
-              <h3>{item.title}</h3>
-              <h4>{item.semTitle}</h4>
+              <h3 data-cursorpointer={true}>{item.title}</h3>
+              <h4 data-cursorpointermini={true}>{item.semTitle}</h4>
             </div>
             <h5 class="text-center mx-2 my-3 project_desc">
               <h5 class="text-start">Key Features</h5>
@@ -172,9 +172,9 @@ const Pcomp = ({ item }) => {
                 }}
               >
                 <ul>
-                  <li>{item.desc1}</li>
-                  <li>{item.desc2}</li>
-                  <li>{item.desc3}</li>
+                  <li data-cursorpointermini={true}>{item.desc1}</li>
+                  <li data-cursorpointermini={true}>{item.desc2}</li>
+                  <li data-cursorpointermini={true}>{item.desc3}</li>
                 </ul>
               </h6>
             </h5>
@@ -186,10 +186,11 @@ const Pcomp = ({ item }) => {
             </h3>
             <center>
               <button
+                data-cursorpointer={true}
                 class="btn btn_effect ms-4 p-2 my-1 project_links"
                 style={{ float: "left", marginLeft: "2rem" }}
               >
-                <a href={item.Link}>
+                <a data-cursorpointer={true} href={item.Link}>
                   Live Preview
                   <i class="fa-solid fa-arrow-right-long ms-1"></i>
                 </a>
@@ -197,10 +198,11 @@ const Pcomp = ({ item }) => {
             </center>
             <center>
               <button
+                data-cursorpointer={true}
                 class="btn btn_effect me-4 p-2 my-1 project_links"
                 style={{ float: "right", marginRight: "2rem" }}
               >
-                <a href={item.sourceCode}>
+                <a data-cursorpointer={true} href={item.sourceCode}>
                   Source Code <i class="fa-solid fa-arrow-right-long ms-1"></i>
                 </a>
               </button>
@@ -229,6 +231,8 @@ export default function Projects() {
 
   return (
     <div className="projects" refa={refa}>
+      <div className="cursor"></div>
+
       <div className="header">
         <Header />
       </div>

@@ -17,6 +17,8 @@ export default function Skills() {
 
   return (
     <div>
+            <div className="cursor"></div>
+    
       <div className="header">
         <Header />
       </div>
@@ -67,7 +69,7 @@ export default function Skills() {
                     </h5>
                     <div className="text-center px-4" style={{ float: "left" }}>
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-html5"
                         style={{ color: "rgba(255, 103, 57, 0.9)" }}
                       ></i>{" "}
@@ -75,7 +77,7 @@ export default function Skills() {
                     </div>
                     <div className="text-center">
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-css3-alt"
                         style={{ color: "rgb(93, 173, 226)" }}
                       ></i>{" "}
@@ -92,7 +94,7 @@ export default function Skills() {
                     </h5>
                     <div className="text-center">
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-bootstrap"
                         style={{ color: "rgb(175, 122, 197)" }}
                       ></i>{" "}
@@ -108,7 +110,7 @@ export default function Skills() {
                     </h6>
                     <div className="text-center">
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-js-square"
                         style={{ color: "yellow" }}
                       ></i>{" "}
@@ -126,7 +128,7 @@ export default function Skills() {
                     </h5>
                     <div className="text-center">
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-react"
                         style={{ color: "rgb(97, 218, 251)" }}
                       ></i>{" "}
@@ -142,7 +144,7 @@ export default function Skills() {
                     </h5>
                     <div className="text-center">
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-npm"
                         style={{ color: "rgb(203, 0, 0)" }}
                       ></i>{" "}
@@ -158,7 +160,7 @@ export default function Skills() {
                     </h5>
                     <div className="text-center px-4" style={{ float: "left" }}>
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-solid fa-database"
                         style={{ color: "rgb(62, 110, 147)" }}
                       ></i>{" "}
@@ -166,7 +168,7 @@ export default function Skills() {
                     </div>
                     <div className="text-center">
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-envira"
                         style={{ color: "rgb(130, 224, 170)" }}
                       ></i>{" "}
@@ -189,7 +191,7 @@ export default function Skills() {
                       style={{ float: "left", paddingLeft: "0rem" }}
                     >
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-git-alt"
                         style={{ color: "rgb(241, 78, 50)" }}
                       ></i>{" "}
@@ -197,7 +199,7 @@ export default function Skills() {
                     </div>
                     <div className="text-center">
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-github"
                         style={{ color: "white" }}
                       ></i>{" "}
@@ -213,7 +215,7 @@ export default function Skills() {
                     </h5>
                     <div className="text-center px-4" style={{ float: "left" }}>
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-solid fa-c"
                         style={{ color: "blue" }}
                       ></i>{" "}
@@ -221,7 +223,7 @@ export default function Skills() {
                     </div>
                     <div className="text-center">
                       {" "}
-                      <i style={{ color: "blue" }}>C++</i> <h6>C++</h6>{" "}
+                      <i data-cursorpointer={true} style={{ color: "blue" }}>C++</i> <h6>C++</h6>{" "}
                     </div>
                   </div>
                   <div
@@ -233,14 +235,14 @@ export default function Skills() {
                     </h5>
                     <div className="text-center px-4" style={{ float: "left" }}>
                       {" "}
-                      <i
+                      <i data-cursorpointer={true}
                         className="fa-brands fa-node"
                         style={{ color: "lightgreen" }}
                       ></i>{" "}
                       <h6>NODE JS</h6>{" "}
                     </div>
                     <div className="text-center">
-                      <i style={{ color: "yellow" }}>
+                      <i data-cursorpointer={true} style={{ color: "yellow" }}>
                         <SiExpress />
                       </i>{" "}
                       <h6 style={{ paddingTop: "29px" }}>EXPRESS JS</h6>{" "}
