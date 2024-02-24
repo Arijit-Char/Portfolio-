@@ -10,8 +10,8 @@ import X from "../../data/x.png";
 import Instagram from "../../data/instagram.jpg";
 import Gfg from "../../data/gfg.png";
 import Leetcode from "../../data/leetcode.webp";
-let top = window.innerWidth <= 845 ? -38 : 3.25;
-let left = window.innerWidth <= 845 ? 25.5 : 12;
+let top = window.innerWidth <= 845 ? -4 : 3.25;
+let left = window.innerWidth <= 845 ? 20 : 12;
 const textVariants = {
   initial: {
     x: -500,
