@@ -10,6 +10,8 @@ import img4 from "../../data/4.png";
 import img5 from "../../data/5.png";
 import img6 from "../../data/6.png";
 import img8 from "../../data/8.png";
+import img9 from "../../data/9.png";
+import img10 from "../../data/10.png";
 import { FaHtml5 } from "react-icons/fa";
 import { SiCsswizardry } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -44,8 +46,7 @@ const items = [
       "1.Developed a kids’ learning platform using MERN stack and Material UI",
     desc2:
       "2.Features included keypress-to-sound, text-to-voice, and a secure user signup system",
-    desc3:
-      "3.currently integrating Parental control feature",
+    desc3: "3.currently integrating Parental control feature",
     sourceCode: "https://github.com/Arijit-Char/HackNITR",
     Link: "https://gigglygurugrove.courses/",
   },
@@ -130,10 +131,32 @@ const items = [
       <FaNpm />,
     ],
     desc1: "Display a feed of quotes fetched from the quotable.io API.",
-    desc2:"Implemented Like, Share and Comment feature. Specified section for Liked Quotes. Tranding Quote.",
-    desc3: "Use Redux for global state management. Responsive for all Screen types.",
+    desc2:
+      "Implemented Like, Share and Comment feature. Specified section for Liked Quotes. Tranding Quote.",
+    desc3:
+      "Use Redux for global state management. Responsive for all Screen types.",
     sourceCode: "https://github.com/Arijit-Char/Quotverse",
     Link: "https://quotversebyarijit.netlify.app/",
+  },
+  {
+    id: 10,
+    title: "Animated Contact Page",
+    semTitle:
+      "Interactive and Visually Appealing Contact Page Web Application.",
+    img: img10,
+    techStacks: [
+      <FaHtml5 />,
+      <SiCsswizardry />,
+      <IoLogoJavascript />,
+      <FaReact />,
+      <FaNpm />,
+    ],
+    desc1:
+      "This project utilizes React for building user interfaces and Visme for animations.",
+    desc2: "Google Sheets Integration",
+    desc3: "Implemented custom form validation and submission functionality.",
+    sourceCode: "https://github.com/Arijit-Char/Assessli-React-Assignment",
+    Link: "https://assessliassignment.netlify.app/",
   },
   {
     id: 4,
@@ -169,6 +192,26 @@ const items = [
     sourceCode:
       "https://github.com/Arijit-Char/FIRST-WEB-DEVELOPMENT-PROJECTOJECT",
     Link: "https://arijit-char.github.io/FIRST-WEB-DEVELOPMENT-PROJECTOJECT/",
+  },
+  {
+    id: 9,
+    title: "Weather App",
+    semTitle: "React and Node Based Weather App",
+    img: img9,
+    techStacks: [
+      <FaReact />,
+      <FaNodeJs />,
+      <FaHtml5 />,
+      <SiCsswizardry />,
+      <IoLogoJavascript />,
+      <FaNpm />,
+    ],
+    desc1: "Search for weather forecasts by city name or coordinates.",
+    desc2:
+      "Display current weather conditions including temperature, feels like temperature, weather description, humidity, and wind speed.",
+    desc3: "Display weather forecast for the next few days.",
+    sourceCode: "https://github.com/Arijit-Char/WeatherFrontend",
+    Link: "https://weatherappbyarijit.netlify.app/",
   },
   {
     id: 7,
