@@ -44,7 +44,7 @@
         position: absolute;
         top: 25vh;
         left: 7vw;
-
+        cursor: none;
         .button {
           margin: 1rem;
           width: 7.5rem;
@@ -53,7 +53,7 @@
           border: 1px solid white;
           background: transparent;
           color: white;
-          cursor: pointer;
+          cursor: none;
           font-weight: 300;
           box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
         }
@@ -106,7 +106,7 @@
   .hero .video > video {
     position: absolute;
   }
-  .hero{
+  .hero {
     background: black;
   }
 }

@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import University from "./components/University/University";
+import Admin from "./components/Admin/Admin";
 function App() {
   const dotCursor = (e) => {
     const cursor = document.querySelector(".cursor");
@@ -40,6 +41,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/experience" element={<Experience />} />
         <Route exact path="/university" element={<University />} />
+        <Route exact path="/admin" element={<Admin />} />
       </Routes>
     </Router>
   );

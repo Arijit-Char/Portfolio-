@@ -2,12 +2,14 @@ import React, { useRef, useEffect } from "react";
 import Header from "../Header/Header";
 import "./Projects.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import img0 from "../../data/img0.png";
 import img1 from "../../data/1.png";
 import img2 from "../../data/2.png";
 import img3 from "../../data/3.png";
 import img4 from "../../data/4.png";
 import img5 from "../../data/5.png";
 import img6 from "../../data/6.png";
+import img8 from "../../data/8.png";
 import { FaHtml5 } from "react-icons/fa";
 import { SiCsswizardry } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -18,10 +20,59 @@ import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
 
 const items = [
   {
     id: 1,
+    title: "Giggly Guru Grove",
+    semTitle: "Kid’s Learning Platform",
+    img: img0,
+    techStacks: [
+      <FaHtml5 />,
+      <SiCsswizardry />,
+      <IoLogoJavascript />,
+      <DiMongodb />,
+      <SiMongoose />,
+      <SiExpress />,
+      <FaReact />,
+      <FaNodeJs />,
+      <FaBootstrap />,
+      <FaNpm />,
+    ],
+    desc1:
+      "1.Developed a kids’ learning platform using MERN stack and Material UI",
+    desc2:
+      "2.Features included keypress-to-sound, text-to-voice, and a secure user signup system",
+    desc3:
+      "3.currently integrating Parental control feature",
+    sourceCode: "https://github.com/Arijit-Char/HackNITR",
+    Link: "https://gigglygurugrove.courses/",
+  },
+
+  {
+    id: 2,
+    title: "Portfolio Website",
+    semTitle: "React and Framer Motion Based Portfolio Website",
+
+    img: img2,
+    techStacks: [
+      <FaHtml5 />,
+      <SiCsswizardry />,
+      <IoLogoJavascript />,
+      <FaReact />,
+      <FaNpm />,
+    ],
+    desc1: "Fully responsive React Portfolio Website",
+    desc2:
+      "Created all the components from scratch using react and java script.",
+    desc3:
+      "Hand coded custom amination using css and Framer-Motion and making the website interactive.",
+    sourceCode: "https://github.com/Arijit-Char/Portfolio-",
+    Link: "https://github.com/Arijit-Char/Portfolio-",
+  },
+  {
+    id: 3,
     title: "Food Delivery App",
     semTitle: "MERN Stack Food Delivery Dynamic Website",
     img: img1,
@@ -47,48 +98,7 @@ const items = [
     Link: "https://645e03424051366e39d6f317--incredible-caramel-a602dc.netlify.app/",
   },
   {
-    id: 2,
-    title: "Portfolio Website",
-    semTitle: "React and Framer Motion Based Portfolio Website",
-
-    img: img2,
-    techStacks: [
-      <FaHtml5 />,
-      <SiCsswizardry />,
-      <IoLogoJavascript />,
-      <FaReact />,
-      <FaNpm />,
-    ],
-    desc1: "Fully responsive React Portfolio Website",
-    desc2:
-      "Created all the components from scratch using react and java script.",
-    desc3:
-      "Hand coded custom amination using css and Framer-Motion and making the website interactive.",
-    sourceCode: "https://github.com/Arijit-Char/Portfolio-",
-    Link: "https://github.com/Arijit-Char/Portfolio-",
-  },
-  {
-    id: 3,
-    title: "Netflix Clone",
-    semTitle: "React Based Netflix Website",
-    img: img3,
-    techStacks: [
-      <FaHtml5 />,
-      <SiCsswizardry />,
-      <IoLogoJavascript />,
-      <FaReact />,
-      <FaNpm />,
-      <FaBootstrap />,
-    ],
-    desc1: "Fully responsive React Netflix Website",
-    desc2:
-      "Created all the components from scratch using react and java script.",
-    desc3: "Used API to fetch movie data",
-    sourceCode: "https://github.com/Arijit-Char/Netflix_Clone",
-    Link: "https://65c78fa1b9545378740413ff--merry-custard-232da2.netlify.app/",
-  },
-  {
-    id: 4,
+    id: 5,
     title: "Mba Chaiwala Clone",
     semTitle: "React and Framer Motion Based Netflix Website",
     img: img4,
@@ -107,7 +117,47 @@ const items = [
     Link: "https://65c791dd37cc55750c320d8c--astonishing-pie-3b95c0.netlify.app/",
   },
   {
-    id: 5,
+    id: 8,
+    title: "Quotverse",
+    semTitle: "Platform to Discover and Engage with Famous Quotes",
+    img: img8,
+    techStacks: [
+      <FaHtml5 />,
+      <SiCsswizardry />,
+      <IoLogoJavascript />,
+      <FaReact />,
+      <SiRedux />,
+      <FaNpm />,
+    ],
+    desc1: "Display a feed of quotes fetched from the quotable.io API.",
+    desc2:"Implemented Like, Share and Comment feature. Specified section for Liked Quotes. Tranding Quote.",
+    desc3: "Use Redux for global state management. Responsive for all Screen types.",
+    sourceCode: "https://github.com/Arijit-Char/Quotverse",
+    Link: "https://quotversebyarijit.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "Netflix Clone",
+    semTitle: "React Based Netflix Website",
+    img: img3,
+    techStacks: [
+      <FaHtml5 />,
+      <SiCsswizardry />,
+      <IoLogoJavascript />,
+      <FaReact />,
+      <FaNpm />,
+      <FaBootstrap />,
+    ],
+    desc1: "Fully responsive React Netflix Website",
+    desc2:
+      "Created all the components from scratch using react and java script.",
+    desc3: "Used API to fetch movie data",
+    sourceCode: "https://github.com/Arijit-Char/Netflix_Clone",
+    Link: "https://65c78fa1b9545378740413ff--merry-custard-232da2.netlify.app/",
+  },
+
+  {
+    id: 6,
     title: "E-Commerce Website",
     semTitle: "Html & Css Based E-Commerce Static Website",
     img: img5,
@@ -121,7 +171,7 @@ const items = [
     Link: "https://arijit-char.github.io/FIRST-WEB-DEVELOPMENT-PROJECTOJECT/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Note Taking App",
     semTitle: "React Based Note Taking Website",
     img: img6,

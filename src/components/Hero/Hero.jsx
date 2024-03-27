@@ -10,6 +10,8 @@ import X from "../../data/x.png";
 import Instagram from "../../data/instagram.jpg";
 import Gfg from "../../data/gfg.png";
 import Leetcode from "../../data/leetcode.webp";
+import { ReactTyped } from "react-typed";
+
 let top = window.innerWidth <= 845 ? -4 : 3.25;
 let left = window.innerWidth <= 845 ? 20 : 12;
 const textVariants = {
@@ -27,6 +29,29 @@ const textVariants = {
   },
 };
 
+const textVariants2 = {
+  initial: {
+    opacity: 0,
+    x: "-100vw",
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      duration: 2,
+    },
+  },
+  exit: {
+    opacity: 0,
+    x: "100vw",
+  },
+  hover: {
+    scale: 1.2,
+    textShadow: "0px 0px 8px rgb(255, 0, 0)",
+  },
+};
 function Body() {
   const navigate = useNavigate();
   const handleButtonClick = (url) => {
@@ -52,11 +77,29 @@ function Body() {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants} data-cursorpointer={true}>
+          <motion.h2
+            variants={textVariants}
+            data-cursorpointer={true}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            whileHover="hover"
+          >
             HI,I'M ARIJIT,
           </motion.h2>
-          <motion.h1 variants={textVariants} data-cursorpointer={true}>
-            Full Stack Web Developer
+          <motion.h1
+            variants={textVariants2}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            whileHover="hover"
+            data-cursorpointer={true}
+          >
+            <ReactTyped
+              strings={["Full Stack Web Developer", "Coder.", "Engineer."]}
+              typeSpeed={150}
+              loop
+            />
           </motion.h1>
           <motion.div className="btn" variants={textVariants}>
             <motion.button

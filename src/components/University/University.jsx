@@ -35,7 +35,7 @@ export default function University() {
           Information Technology
         </h4>
         <h6 data-cursorpointermini={true}>
-          GPA - 8.45 / 10 (till 4th Semester)
+          GPA - 8.42 / 10 (till 4th Semester)
         </h6>
         <h5
           data-cursorpointermini={true}
@@ -47,8 +47,8 @@ export default function University() {
         <h5 className="text-start text-light mt-2">
           <ul style={{ lineHeight: "1.5" }}>
             <li data-cursorpointermini={true} style={{ listStyle: "none" }}>
-              A third year student pursuing Information Technology at Calcutta
-              University.
+              Hii ! I am a B.Tech. student pursuing Information Technology at
+              University of Calcutta
             </li>
           </ul>
         </h5>

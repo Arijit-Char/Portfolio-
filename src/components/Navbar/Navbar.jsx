@@ -5,6 +5,7 @@ import "./Anim.scss";
 import logo from "../../data/Arijit Char-logos_transparent.png";
 import { motion } from "framer-motion";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const textVariants = {
@@ -38,20 +39,13 @@ export default function Navbar() {
           src={logo}
           alt=""
         />
-        <div>{/* <h2>Resume</h2> */}</div>
-        {/* <div>HOME</div>
-        <div>EDUCATION</div>
-        <div>SKILLS</div>
-        <div>PROJECTS</div>
-        <div>EXPERIENCE</div>
-        <div>ACHIEVEMENTS</div>
-        <div>CONTACT ME</div> */}
+         <Link data-cursorpointer={true} className="adminbtn" to="/admin">Admin Login</Link>
       </div>
       <div className="social">
         <section id="sm" class="pad">
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/arijit-char-241468217/">
+              <a  href="https://www.linkedin.com/in/arijit-char-241468217/">
                 <i
                   data-cursorpointer={true}
                   class="fab fa-linkedin-in"
