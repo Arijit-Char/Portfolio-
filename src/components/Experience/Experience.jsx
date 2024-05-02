@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Header from "../Header/Header";
 import "./Experience.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import E0 from "../../data/E0.jpg";
 import E1 from "../../data/E1.png";
 import E2 from "../../data/E2.png";
 import E3 from "../../data/E3.svg";
@@ -10,18 +11,18 @@ import E4 from "../../data/E4.png";
 const items = [
   {
     id: 1,
-    title: "Microsoft Student Ambassador Alpha",
+    title: "ReactJS Development Intern @ThePortfolyo",
     semTitle:
-      "Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future.",
-    img: E1,
+      "Working as a React Developer Intern at ThePortfolyo.com, demonstrating proficiency and expertise in Front-End development.",
+    img: E0,
     desc1:
-      "1.I actively spread awareness about Microsoft Learn as a valuable learning resource among my peers.",
+      "1.Currently interning as a React Developer, collaborating closely with a mentor to execute tasks and projects.",
     desc2:
-      "2.I plan and host workshops and webinars to provide hands-on learning experiences for students interested in Microsoft technologies.",
+      "2.Actively contributing to the development of ThePortfolyo.com’s core products as a React Developer intern.",
     desc3:
-      "3.I build and nurture a vibrant community of students interested in Microsoft technologies through engaging discussions and collaborative opportunities.",
-    Link: "https://mvp.microsoft.com/studentambassadors/certificate/7f3d5bed-3e0d-4a97-ba59-5e85b50c1650",
-    sdate: "01/2024",
+      "3.Focusing on React development under the guidance of a dedicated mentor, while also adhering to strict data security protocols and professional conduct standards.",
+    Link: "https://www.linkedin.com/in/arijit-char-241468217/",
+    sdate: "04/2024",
     edate: "Present",
   },
   {
@@ -57,6 +58,22 @@ const items = [
   },
   {
     id: 4,
+    title: "Microsoft Student Ambassador Alpha",
+    semTitle:
+      "Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future.",
+    img: E1,
+    desc1:
+      "1.I actively spread awareness about Microsoft Learn as a valuable learning resource among my peers.",
+    desc2:
+      "2.I plan and host workshops and webinars to provide hands-on learning experiences for students interested in Microsoft technologies.",
+    desc3:
+      "3.I build and nurture a vibrant community of students interested in Microsoft technologies through engaging discussions and collaborative opportunities.",
+    Link: "https://mvp.microsoft.com/studentambassadors/certificate/7f3d5bed-3e0d-4a97-ba59-5e85b50c1650",
+    sdate: "01/2024",
+    edate: "Present",
+  },
+  {
+    id: 5,
     title: "DSA Lead @GDSC Calcutta University",
     semTitle:
       "GDSC, short for Google Developer Student Clubs, are student-led community groups focused on learning Google technologies and are managed by Google Developers.",
@@ -97,7 +114,9 @@ const Comp = ({ item }) => {
           >
             <div class="project_intro mt-4">
               <h3 data-cursorpointer={true}>{item.title}</h3>
-              <h4 data-cursorpointermini={true} style={{ fontSize: "0.8rem" }}>{item.semTitle}</h4>
+              <h4 data-cursorpointermini={true} style={{ fontSize: "0.8rem" }}>
+                {item.semTitle}
+              </h4>
             </div>
             <h5 class="text-center mx-2 my-3 project_desc">
               <h5 class="text-start">Achievements/Tasks</h5>
@@ -156,10 +175,10 @@ export default function Experience() {
 
   return (
     <div className="experience" ref={ref}>
-            <div className="cursor"></div>
+      <div className="cursor"></div>
 
       <div className="header">
-        <Header  />
+        <Header />
       </div>
       <div className="heading">
         <h1 style={{ margin: "0px", padding: "0px" }}>Experience</h1>

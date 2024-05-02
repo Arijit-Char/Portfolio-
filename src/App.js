@@ -8,6 +8,7 @@ import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import University from "./components/University/University";
 import Admin from "./components/Admin/Admin";
+
 function App() {
   const dotCursor = (e) => {
     const cursor = document.querySelector(".cursor");

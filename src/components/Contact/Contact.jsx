@@ -50,7 +50,7 @@ export default function Contact() {
   const useinview = useInView(ref, { margin: "-100px" });
   return (
     <div>
-            <div className="cursor"></div>
+      <div className="cursor"></div>
 
       <div className="header">
         <Header />
@@ -64,7 +64,9 @@ export default function Contact() {
       >
         <motion.div className="textcont" variants={variants}>
           <motion.div className="text" variants={variants}>
-            <motion.h1 variants={variants} data-cursorpointer={true}>Reach Out !!</motion.h1>
+            <motion.h1 variants={variants} data-cursorpointer={true}>
+              Reach Out !!
+            </motion.h1>
             <h3 data-cursorpointermini={true}>
               Full time job opportunity,Internship opportunity, Freelance
               opportunity or even a coffee.
@@ -93,18 +95,18 @@ export default function Contact() {
             <span>165/1,S Sinthee Rd,Sinthee,Kolkata,West Bengal 700050</span>
           </motion.div>
 
-          <div className="links" >
-            <a  href="https://www.linkedin.com/in/arijit-char-241468217/">
-              <FaLinkedin data-cursorpointermini={true}/>
+          <div className="links">
+            <a href="https://www.linkedin.com/in/arijit-char-241468217/">
+              <FaLinkedin data-cursorpointermini={true} />
             </a>
             <a href="https://github.com/Arijit-Char">
-              <FaGithub data-cursorpointermini={true}/>
+              <FaGithub data-cursorpointermini={true} />
             </a>
             <a href="https://twitter.com/char_arijit">
               <FaTwitter data-cursorpointermini={true} />
             </a>
             <a href="https://www.instagram.com/a__ri__ji__t/">
-              <FaInstagramSquare data-cursorpointermini={true}/>
+              <FaInstagramSquare data-cursorpointermini={true} />
             </a>
           </div>
         </motion.div>
@@ -136,8 +138,20 @@ export default function Contact() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 4, duration: 1 }}
           >
-            <input data-cursorpointermini={true} type="text" required placeholder="Name" name="name" />
-            <input data-cursorpointermini={true} type="email" required placeholder="Email" name="email" />
+            <input
+              data-cursorpointermini={true}
+              type="text"
+              required
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              data-cursorpointermini={true}
+              type="email"
+              required
+              placeholder="Email"
+              name="email"
+            />
             <textarea
               required
               rows={8}
