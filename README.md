@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Arijit Char Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://arijitchar.netlify.app/)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Welcome to my portfolio website! This platform serves as a showcase of my work, skills, and experiences as a developer. I've designed and built this website using React, leveraging various libraries and components to enhance its functionality and aesthetics.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React and Framer Motion**: The website is built using React, a popular JavaScript library for building user interfaces. Framer Motion is used for smooth animations, adding a touch of elegance to the user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Responsive Design**: Ensuring accessibility across different devices is crucial. Therefore, I've implemented a responsive design approach to guarantee optimal viewing experiences on desktops, tablets, and mobile devices.
 
-### `npm test`
+- **Floating Buttons**: The FloatingButtons component provides easy access to my social media profiles. While integrating this component, I encountered challenges in making it responsive and applying SCSS directly. As a workaround, I utilized inline styles for positioning based on the window width.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Email Management**: Managing communication is essential, which is why I've integrated EmailJS for seamless email handling directly through the website. This ensures efficient communication and simplifies the process for visitors to reach out to me.
 
-### `npm run build`
+- **Overlay Navbar**: Navigation is made simple with an overlay navbar, allowing users to easily explore different sections of the website without interrupting their browsing experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **SCSS Styling**: To maintain a clean and organized codebase, I've utilized SCSS for styling components. SCSS offers powerful features such as variables, nesting, and mixins, enhancing code readability and maintainability.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Animated Cursor**: Adding subtle animations to elements can significantly enhance user interaction. I've incorporated an animated cursor to provide visual feedback and create a more engaging experience for visitors.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Problem Faced
 
-### `npm run eject`
+While implementing the FloatingButtons component, I faced challenges in making it responsive and applying SCSS directly. The component's limitations required me to use inline styles for positioning based on the window width. However, I managed to overcome this challenge by dynamically adjusting the button position using JavaScript based on the viewport width. Here's the code snippet that solved the problem:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```javascript
+let top = window.innerWidth <= 845 ? -4 : 3.25;
+let left = window.innerWidth <= 845 ? 20 : 12;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<FloatingButtons
+    // Other props...
+    top={`${top}vh`}
+    left={`${left}vw`}
+/>
+```
+## Live Video Demonstration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To provide a visual walkthrough of my portfolio website, I've created a demonstration video. You can watch the video by clicking on the image below:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[![Portfolio Demo Video](https://img.youtube.com/vi/38bwiccps9g/0.jpg)](https://www.youtube.com/watch?v=38bwiccps9g)
 
-## Learn More
+## Backend Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In addition to the frontend development, I am currently working on the backend of this website. Here's an overview of the backend development:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Technologies Used**: Node.js, Express.js, MongoDB
+- **Functionality**: Creating an admin panel to manage projects, education details, and work experiences. Utilizing Redux for frontend state management and Cloudinary for efficient management of images and files.
+- **Purpose**: The admin panel enables administrators to seamlessly add, update, and delete content on the portfolio website, enhancing its functionality and ease of maintenance.
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run the project locally, follow these steps:
 
-### Analyzing the Bundle Size
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/Arijit-Char/portfolio.git
+```
+2. Install dependencies:
 
-### Making a Progressive Web App
+```bash
+cd portfolio
+npm install
+```
+3. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm start
+```
+1. Clone the repository:
 
-### Advanced Configuration
+```bash
+git clone https://github.com/Arijit-Char/portfolio.git
+```
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are welcome! If you have any suggestions for improvements or spot any bugs, feel free to open an issue or submit a pull request.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the [MIT License](https://opensource.org/license/mit).
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
